@@ -1,0 +1,21 @@
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+
+}
+.navbar a {
+    list-style: none;
+    color:white;
+    padding: 30px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.navbar a:hover{
+    background-color: var(--color-primary-dark);
+
+}
+
+

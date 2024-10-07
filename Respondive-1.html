@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización Sin Fines de Lucro</title>
+    <meta name="description" content="Organización dedicada a la protección del medio ambiente y la promoción de prácticas sostenibles.">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Organización Sin Fines de Lucro</h1>
+            <p>Uniendo esfuerzos por un futuro más verde y sostenible para todos.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#actividades-realizadas">Actividades Realizadas</a></li>
+            <li><a href="#container">Próximos Eventos</a></li>
+            <li><a href="#temas-de-interes">Temas de Interés</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Más sobre Cambio Climático en Wikipedia</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <aside id="temas-de-interes" class="temas-de-interes">
+            <h2>Temas de Interés</h2>
+            <h3>Importancia de la Educación Ambiental</h3>
+            <img src="imagenes/que_es_la_educacion_ambiental_concepto_y_objetivos_1475_orig.jpg" alt="Educación Ambiental">
+            <p>La educación ambiental es un proceso que busca concienciar, sensibilizar y promover el conocimiento y la comprensión de los problemas ambientales y la importancia de la conservación y protección del medio ambiente. Se enfoca en desarrollar actitudes, valores y habilidades que conduzcan a la adopción de comportamientos responsables y sostenibles hacia el entorno natural y los recursos naturales.</p>
+            
+            <h2>Videos relacionados</h2>
+            <div class="video-relacionado">
+                <iframe src="https://www.youtube.com/embed/Fo3CAOhYsX0" frameborder="0" title="Video relacionado 1"></iframe>
+                <iframe src="https://www.youtube.com/embed/Ua5nREJBgHE" frameborder="0" title="Video relacionado 2"></iframe>
+            </div>
+            <div class="gallery">
+                <h2>Galería de Imágenes</h2>
+                <img src="imagenes/img2.jpg" alt="Imagen 1">
+                <img src="imagenes/3.jpg" alt="Imagen 2">
+                <img src="imagenes/4.jpeg" alt="Imagen 3">
+                <img src="imagenes/6.webp" alt="Imagen 4">
+            </div>
+        </aside>
+
+        <section id="quienes-somos" class="quienes-somos">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una organización sin fines de lucro comprometida con la protección del medio ambiente y la promoción de prácticas sostenibles. Nuestra misión es crear conciencia sobre los desafíos ambientales actuales y trabajar en colaboración con la comunidad para encontrar soluciones innovadoras y efectivas.</p>
+            <p>En nuestro equipo, contamos con profesionales apasionados por el medio ambiente, desde biólogos y ecologistas hasta educadores ambientales y defensores de la conservación. Juntos, buscamos crear un impacto positivo en nuestro entorno y en las generaciones futuras.</p>
+            <p>Colaboramos estrechamente con otras organizaciones, instituciones educativas y empresas comprometidas con la sostenibilidad para amplificar nuestro alcance y lograr resultados significativos. Creemos en el poder de la acción colectiva y en la importancia de trabajar juntos para construir un futuro más verde y saludable para todos.</p>
+            <p>¡Únete a nosotros en nuestra misión de proteger y preservar nuestro precioso planeta!</p>
+            <img src="imagenes/2.jpg" alt="Equipo de la organización">
+
+            <h2>Actividades Realizadas</h2>
+            <ul>
+                <li>Campañas de Concientización: Lanzamos campañas de concientización en redes sociales y medios de comunicación para informar a la comunidad sobre problemas ambientales y promover acciones individuales y colectivas para abordarlos.</li>
+                <li>Charlas de Sensibilización: Organizamos charlas y conferencias sobre temas ambientales, como el cambio climático, la conservación de la vida silvestre y la gestión sostenible de recursos naturales.</li>
+                <li>Talleres de Reciclaje: Impartimos talleres educativos sobre reciclaje en escuelas y comunidades locales para fomentar la reducción de residuos y la reutilización de materiales.</li>
+            </ul>
+            <section id="container" class="container">
+            <h2>¡Próximos Eventos!</h2>
+          
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Evento</th>
+                            <th>Fecha</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carrera Solidaria por el Medio Ambiente</td>
+                            <td>15 de mayo de 2024</td>
+                            <td>Parque Central</td>
+                        </tr>
+                        <tr>
+                            <td>Conferencia sobre Cambio Climático</td>
+                            <td>22 de mayo de 2024</td>
+                            <td>Centro Comunitario</td>
+                        </tr>
+                        <tr>
+                            <td>Limpieza de Ríos</td>
+                            <td>5 de junio de 2024</td>
+                            <td>Río Principal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <section class="formulario-acceso">
+        <h2>Acceso a la página</h2>
+        <form action="procesar_acceso.php" method="post" class="formulario">
+            <fieldset>
+                <legend>Ingrese sus credenciales:</legend>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <button type="submit" class="boton">Ingresar</button>
+        </form>
+    </section>
+
+    <section class="formulario-registro">
+        <h2>Registro de nuevos usuarios</h2>
+        <form action="procesar_registro.php" method="post">
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="documento">Tipo de documento:</label>
+                <select id="documento" name="documento">
+                    <option value="DNI">DNI</option>
+                    <option value="RUT">RUT</option>
+                    <option value="Cédula">Cédula</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+                <label for="numero-doc">Número de documento:</label>
+                <input type="text" id="numero-doc" name="numero-doc" required>
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="sexo" value="femenino">
+                <label for="femenino">Femenino</label>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono móvil:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+            </fieldset>
+            <button type="submit" class="boton">Registrar</button>
+        </form>
+    </section>
+
+    <footer class="footer-body">
+        <div class="container-body">
+            <div class="colum1">
+                <p>Contacto: organizacion@example.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

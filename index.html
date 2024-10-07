@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizacion</title>
+    <link rel="stylesheet" href="Style1.css">
+
+</head> 
+
+<body>
+<header>
+  <div>
+    <h1>Organización Sin Fines de Lucro</h1>
+     <p>Uniendo esfuerzos por un futuro más verde y sostenible para todos.</p>
+  </div>
+
+ </header>
+ <nav class="navbar"> 
+
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#actividades-realizadas">Actividades Realizadas</a></li>
+            <li><a href="#proximos-eventos">Próximos Eventos</a></li>
+            <li><a href="#temas-de-interes">Temas de Interés</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Más sobre Cambio Climático en Wikipedia</a></li>
+        
+    </nav>
+<div class="temas-de-interes">
+ <aside>
+    <h2>Temas de Interés</h2>
+    <h3>Importancia de la Educación Ambiental</h3>
+    <img src="imagenes/que_es_la_educacion_ambiental_concepto_y_objetivos_1475_orig.jpg" alt="temas de interes" style="width: 100%;">
+    <h3>Importancia de la Educación Ambiental</h3>
+    <p>La educación ambiental es un proceso que busca concienciar, sensibilizar y promover el conocimiento y la comprensión de los problemas ambientales y la importancia de la conservación y protección del medio ambiente. Se enfoca en desarrollar actitudes, valores y habilidades que conduzcan a la adopción de comportamientos responsables y sostenibles hacia el entorno natural y los recursos naturales.</p>
+
+
+      
+    <h3>Videos relacionados</h3>
+    <a href="#" class="video-relacionado">
+       <iframe src="https://www.youtube.com/embed/Fo3CAOhYsX0" frameborder="0"  style="width: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/Ua5nREJBgHE" frameborder="0"  style="width: 100%;"></iframe>
+    </a>
+    <h2>Registro de Eventos</h2>
+    <form action="registrar_evento.php" method="post" class="donaciones-form">
+        <label for="descripcion">Descripción del Evento:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+        
+        <label for="tipo">Tipo de Evento:</label>
+        <input type="text" id="tipo" name="tipo" required>
+        
+        <label for="lugar">Lugar:</label>
+        <input type="text" id="lugar" name="lugar" required>
+        
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+        
+        <button type="submit">Registrar Evento</button>
+    </form>
+ </aside>
+
+ <section class="quienes-somos">
+    <h2>Quiénes Somos</h2>
+    <p>Somos una organización sin fines de lucro comprometida con la protección del medio ambiente y la promoción de prácticas sostenibles. Nuestra misión es crear conciencia sobre los desafíos ambientales actuales y trabajar en colaboración con la comunidad para encontrar soluciones innovadoras y efectivas.
+
+        En nuestro equipo, contamos con profesionales apasionados por el medio ambiente, desde biólogos y ecologistas hasta educadores ambientales y defensores de la conservación. Juntos, buscamos crear un impacto positivo en nuestro entorno y en las generaciones futuras.
+        
+        Colaboramos estrechamente con otras organizaciones, instituciones educativas y empresas comprometidas con la sostenibilidad para amplificar nuestro alcance y lograr resultados significativos. Creemos en el poder de la acción colectiva y en la importancia de trabajar juntos para construir un futuro más verde y saludable para todos.
+        
+        ¡Únete a nosotros en nuestra misión de proteger y preservar nuestro precioso planeta!</p>
+    <img alt="imagenes"src="imagenes/2.jpg" style="width: 100%;"/>
+    
+    <h2>Actividades Realizadas</h2>
+    <ul>
+        <li>Campañas de Concientización: Lanzamos campañas de concientización en redes sociales y medios de comunicación para informar a la comunidad sobre problemas ambientales y promover acciones individuales y colectivas para abordarlos.</li>
+        <li>Charlas de Sensibilización: Organizamos charlas y conferencias sobre temas ambientales, como el cambio climático, la conservación de la vida silvestre y la gestión sostenible de recursos naturales.</li>
+        <li>Talleres de Reciclaje: Impartimos talleres educativos sobre reciclaje en escuelas y comunidades locales para fomentar la reducción de residuos y la reutilización de materiales.</li>
+    </ul>
+    <h2>¡Proximos eventos y proyectos!</h2>
+
+     <section class="container">
+    
+        <nav>
+            <ul>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+            </ul>
+        </nav>
+    
+        <div class="search-container">
+            <input type="text" id="eventSearch" placeholder="Buscar evento..." onkeyup="searchEvents()">
+        </div>
+    
+        <div id="results-container">
+            <!-- Lista de eventos -->
+            <ul id="eventList">
+                <li onclick="showEventDetails('evento1')">Carrera Solidaria por el Medio Ambiente - 15 de mayo de 2024</li>
+                <li onclick="showEventDetails('evento2')">Conferencia sobre Cambio Climático - 22 de mayo de 2024</li>
+                <li onclick="showEventDetails('evento3')">Limpieza de Ríos - 5 de junio de 2024</li>
+                <li onclick="showEventDetails('evento4')">Taller de Reciclaje en la Comunidad - 12 de junio de 2024</li>
+                <li onclick="showEventDetails('evento5')">Plantación de Árboles - 25 de junio de 2024</li>
+            </ul>
+    
+            <div id="results-container">
+                <ul id="eventList">
+                    <!-- Eventos se mostrarán dinámicamente -->
+                </ul>
+            </div>
+    
+            <div id="eventDetails" class="details-container" style="display: none;">
+                <h2>Detalles del Evento</h2>
+                <p id="eventDetailsText"></p>
+                <p id="eventLocation"></p>
+                <p id="eventDate"></p>
+                <p id="eventDescription"></p>
+                <p id="eventOrganizer"></p>
+                <p id="eventTime"></p>
+                <button onclick="closeDetails()">Cerrar</button>
+            </div>
+    
+            <div id="projectDetails" class="details-container" style="display: none;">
+                <h2>Detalles del Proyecto</h2>
+                <p id="projectDetailsText"></p>
+                <button onclick="closeDetails()">Cerrar</button>
+            </div>
+    
+            <div id="donations" class="details-container" style="display: none;">
+                <h2>Realiza una Donación</h2>
+                <p>Apoya nuestra misión realizando una donación segura a través de nuestra plataforma.</p>
+                <button onclick="location.href='donar.html'">Donar Ahora</button>
+                <button onclick="closeDetails()">Cerrar</button>
+            </div>
+    
+        <script src="script.js"></script>
+     </section>
+     <section id="donaciones" class="donaciones-container">
+        <h2>¡Apoya Nuestra Causa!</h2>
+        <p>Tu apoyo es fundamental para seguir con nuestra misión. Realiza una donación segura a través de nuestra plataforma y contribuye a un futuro más verde y sostenible.</p>
+        <form action="donar.php" method="post" class="donaciones-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="monto">Monto a Donar:</label>
+            <input type="number" id="monto" name="monto" step="0.01" required>
+            
+            <button type="submit" class="donar-btn">Donar Ahora</button>
+        </form>
+    </section>
+ </section>
+<footer class="footer-body">
+    <div class="container-body">
+        <div class="footer-columns">
+            <div class="column">
+                <h3>Contacto</h3>
+                <p>Email: <a href="mailto:organizacion@example.com">organizacion@example.com</a></p>
+                <p>Teléfono: +123 456 7890</p>
+                <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+            </div>
+            <div class="column">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#actividades-realizadas">Actividades Realizadas</a></li>
+                    <li><a href="#proximos-eventos">Próximos Eventos</a></li>
+                    <li><a href="#temas-de-interes">Temas de Interés</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Redes Sociales</h3>
+                <a href="https://facebook.com/tuorganizacion" target="_blank"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/tuorganizacion" target="_blank"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+                <a href="https://instagram.com/tuorganizacion" target="_blank"><img src="imagenes/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://linkedin.com/company/tuorganizacion" target="_blank"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Organización Sin Fines de Lucro. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

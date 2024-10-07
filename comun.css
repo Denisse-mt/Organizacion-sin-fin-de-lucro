@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+img{
+    border-radius: 10px;
+    
+}
+/* Estilos para los formularios */
+section {
+
+    padding: 20px;
+    border: 2px solid #cccccc;
+    margin-bottom: 20px;
+}
+ .formulario {
+    max-width: 300px;
+    margin: 0 auto; /* Esta línea centra el formulario horizontalmente */
+}
+    fieldset {
+    border: none;
+    padding: 0;
+}
+ 
+label {
+    display: block; /* Para que cada etiqueta esté en una línea separada */
+    margin-bottom: 10px; /* Espacio entre etiquetas */
+    font-weight: bold; /* Texto en negrita */
+}
+button.boton {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar */
+}
+
+button.boton:hover {
+    background-color: #45a049;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 50%; 
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Tamaño total incluyendo borde */
+}
+
+
+#formulario-registro {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     }
+     /* Estilo para las notificaciones */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50; /* Color verde para indicar éxito */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000; /* Asegura que la notificación esté por encima de otros elementos */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Opcional: estilo para animar la desaparición de la notificación */
+.notification.fade-out {
+    opacity: 0;
+}
+
+/* Estilo para la cabecera */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para el footer */
+.footer-body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el contenedor de eventos y proyectos */
+.container {
+    padding: 20px;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #4CAF50; /* Color verde para los botones */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el campo de búsqueda */
+.search-container {
+    margin: 20px 0;
+}
+
+#eventSearch {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Estilo para los detalles del evento y proyecto */
+.details-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.donaciones-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.donaciones-container h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.donaciones-container p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.donaciones-form {
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+}
+
+.donaciones-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.donaciones-form input[type="text"],
+.donaciones-form input[type="email"],
+.donaciones-form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.donaciones-form button {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.donaciones-form button:hover {
+    background-color: #2ecc71;
+}
